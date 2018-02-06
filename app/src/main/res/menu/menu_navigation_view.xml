@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item android:id="@+id/menu_item_hot_topic"
+      android:icon="@mipmap/ic_topic"
+      android:title="热门话题"/>
+
+  <item android:id="@+id/menu_item_news"
+      android:icon="@mipmap/ic_news"
+      android:title="科技动态"/>
+
+  <item android:id="@+id/menu_item_tech_news"
+      android:icon="@mipmap/ic_code"
+      android:title="开发者资讯"/>
+
+  <item android:id="@+id/menu_item_more"
+      android:icon="@mipmap/ic_more"
+      android:title="更多"/>
+</menu>
