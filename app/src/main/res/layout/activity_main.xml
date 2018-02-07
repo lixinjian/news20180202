@@ -15,12 +15,12 @@
             android:id="@+id/main_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@color/colorAccent"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
         <com.xinjian.news.common.widget.NoPreloadViewPager
-            android:id="@+id/ViewPagerLayout"
+            android:id="@+id/noPreloadViewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
@@ -32,7 +32,6 @@
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:background="@android:color/white"
-            app:elevation="8dp"
             app:itemIconTint="@color/colorPrimary"
             app:itemTextColor="@color/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways"
@@ -44,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:layout_marginTop="?attr/actionBarSize"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"/>
 

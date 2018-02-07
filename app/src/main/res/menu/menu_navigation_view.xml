@@ -5,11 +5,11 @@
       android:icon="@mipmap/ic_topic"
       android:title="热门话题"/>
 
-  <item android:id="@+id/menu_item_news"
+  <item android:id="@+id/menu_item_technology"
       android:icon="@mipmap/ic_news"
       android:title="科技动态"/>
 
-  <item android:id="@+id/menu_item_tech_news"
+  <item android:id="@+id/menu_item_developer"
       android:icon="@mipmap/ic_code"
       android:title="开发者资讯"/>
 

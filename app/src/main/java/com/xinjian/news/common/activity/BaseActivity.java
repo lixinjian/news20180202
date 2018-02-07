@@ -3,16 +3,19 @@ package com.xinjian.news.common.activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
+import android.widget.Toast;
 
+import com.xinjian.news.R;
 import com.xinjian.news.common.base.ActivityLifeCycleEvent;
 
 import io.reactivex.subjects.PublishSubject;
+import me.yokeyword.fragmentation.SupportActivity;
 
 /**
  * Created by lxj on 2018/2/6 0006.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends SupportActivity {
 
     public final PublishSubject<ActivityLifeCycleEvent> lifecycleSubject = PublishSubject.create();
 
@@ -41,12 +44,4 @@ public class BaseActivity extends AppCompatActivity {
         super.onDestroy();
         lifecycleSubject.onNext(ActivityLifeCycleEvent.DESTROY);
     }
-
-
-
-
-
-
-
-
 }
