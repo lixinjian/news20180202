@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.xinjian.news.R;
+import com.xinjian.news.common.fragment.BaseFragment;
 
 
 /**
@@ -15,7 +16,7 @@ import com.xinjian.news.R;
  * 开发者咨询
  */
 
-public class DeveloperTabLayout extends Fragment {
+public class DeveloperTabLayout extends BaseFragment {
 
     private static DeveloperTabLayout instance = null;
 
@@ -29,6 +30,8 @@ public class DeveloperTabLayout extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.developer_tab, container, false);
+
+
 
         return view;
     }

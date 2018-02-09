@@ -120,10 +120,7 @@ public class MainActivity extends BaseActivity {
                 }
                 menuItem = mBottomNavigationView.getMenu().getItem(position);
                 menuItem.setChecked(true);
-
-
                 mToolbar.setTitle(titleName[position]);
-
             }
 
             @Override
@@ -144,14 +141,14 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initFragmentList() {
-        Fragment developerTabLayout = new DeveloperTabLayout();
         Fragment hotTopicTabLayout = new HotTopicTabLayout();
-        Fragment moreTabLayout = new MoreTabLayout();
         Fragment technologyTabLayout = new TechnologyTabLayout();
-        mFragmentList.add(developerTabLayout);
+        Fragment developerTabLayout = new DeveloperTabLayout();
+        Fragment moreTabLayout = new MoreTabLayout();
         mFragmentList.add(hotTopicTabLayout);
-        mFragmentList.add(moreTabLayout);
         mFragmentList.add(technologyTabLayout);
+        mFragmentList.add(developerTabLayout);
+        mFragmentList.add(moreTabLayout);
     }
 
     /**
@@ -183,7 +180,6 @@ public class MainActivity extends BaseActivity {
         }
         return true;
     }
-
 
     @Override
     public void onBackPressedSupport() {
